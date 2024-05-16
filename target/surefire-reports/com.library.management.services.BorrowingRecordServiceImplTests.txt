@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: com.library.management.services.BorrowingRecordServiceImplTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.524 s <<< FAILURE! -- in com.library.management.services.BorrowingRecordServiceImplTests
+com.library.management.services.BorrowingRecordServiceImplTests.testReturnBookRecordNotFound -- Time elapsed: 0.484 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.library.management.services.BorrowingRecordServiceImplTests.testReturnBookRecordNotFound(BorrowingRecordServiceImplTests.java:110)
+  2. -> at com.library.management.services.BorrowingRecordServiceImplTests.testReturnBookRecordNotFound(BorrowingRecordServiceImplTests.java:111)
+  3. -> at com.library.management.services.BorrowingRecordServiceImplTests.testReturnBookRecordNotFound(BorrowingRecordServiceImplTests.java:112)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:192)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.library.management.services.BorrowingRecordServiceImplTests.testReturnBook -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.RuntimeException: Book not found
+	at com.library.management.services.impl.BorrowingRecordServiceImpl.lambda$returnBook$2(BorrowingRecordServiceImpl.java:66)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.management.services.impl.BorrowingRecordServiceImpl.returnBook(BorrowingRecordServiceImpl.java:66)
+	at com.library.management.services.BorrowingRecordServiceImplTests.testReturnBook(BorrowingRecordServiceImplTests.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.library.management.services.BorrowingRecordServiceImplTests.testBorrowBook -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.RuntimeException: Book not found
+	at com.library.management.services.impl.BorrowingRecordServiceImpl.lambda$borrowBook$0(BorrowingRecordServiceImpl.java:44)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.management.services.impl.BorrowingRecordServiceImpl.borrowBook(BorrowingRecordServiceImpl.java:44)
+	at com.library.management.services.BorrowingRecordServiceImplTests.testBorrowBook(BorrowingRecordServiceImplTests.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.library.management.services.BorrowingRecordServiceImplTests.testDeleteAllBorrowingRecords -- Time elapsed: 0.008 s <<< FAILURE!
+Wanted but not invoked:
+borrowingRecordRepository.deleteAll();
+-> at com.library.management.services.BorrowingRecordServiceImplTests.testDeleteAllBorrowingRecords(BorrowingRecordServiceImplTests.java:127)
+Actually, there were zero interactions with this mock.
+
+	at com.library.management.services.BorrowingRecordServiceImplTests.testDeleteAllBorrowingRecords(BorrowingRecordServiceImplTests.java:127)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

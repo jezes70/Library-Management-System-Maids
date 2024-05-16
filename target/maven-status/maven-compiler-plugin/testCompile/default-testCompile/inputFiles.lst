@@ -1,0 +1,11 @@
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/LibraryManagementSystemApplicationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/TestDataUtil.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/services/PatronServiceImplTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/services/BorrowingRecordServiceImplTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/controllers/BorrowingRecordControllerIntegrationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/controllers/PatronControllerIntegrationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/services/BookServiceImplTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/repositories/BookEntityRepositoryIntegrationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/repositories/BorrowingRecordEntityRepositoryIntegrationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/repositories/PatronEntityRepositoryIntegrationTests.java
+/Users/deca/Desktop/library-management-system/src/test/java/com/library/management/controllers/BookControllerIntegrationTests.java

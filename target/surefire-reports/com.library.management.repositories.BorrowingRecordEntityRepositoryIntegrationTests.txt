@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.library.management.repositories.BorrowingRecordEntityRepositoryIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.54 s -- in com.library.management.repositories.BorrowingRecordEntityRepositoryIntegrationTests
